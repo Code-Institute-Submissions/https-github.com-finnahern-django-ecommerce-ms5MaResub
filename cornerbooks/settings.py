@@ -27,7 +27,17 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    'cornerbooks-ms5.herokuapp.com',
+    'https://cornerbooks-ms5.herokuapp.com',
+    'https://8000-finnahern-djangoecommerc-fomto9g2f02.ws-eu38.gitpod.io',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://cornerbooks-ms5.herokuapp.com',
+    'https://8000-finnahern-djangoecommerc-fomto9g2f02.ws-eu38.gitpod.io'
+]
 
 
 # Application definition
