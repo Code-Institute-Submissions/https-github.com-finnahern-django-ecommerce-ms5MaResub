@@ -1,0 +1,13 @@
+html {
+    height: 100%;
+}
+
+body {
+    color: red;
+    height: calc(100vh - 164px);
+    font-family: 'Playfair Display', serif;
+}
+
+.logo-font {
+    font-family: 'Playfair Display', serif;
+}
