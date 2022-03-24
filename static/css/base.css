@@ -3,11 +3,41 @@ html {
 }
 
 body {
-    color: red;
-    height: calc(100vh - 164px);
-    font-family: 'Playfair Display', serif;
+    height: calc(100vh - 118px);
+}
+
+#nav-buttons{
+    text-align: justify;
+}
+
+.main-logo-link, :hover {
+    color: white;
 }
 
 .logo-font {
     font-family: 'Playfair Display', serif;
+}
+
+.bg-cornergreen {
+    background-color: #6c8e02; 
+}
+
+.btn-black {
+    background: black;
+    color: white;
+    border: black;
+}
+
+.nav-btn {
+    border: solid 1px;
+    margin: 5px;
+}
+
+
+/* Media queries -----------------*/
+
+@media (max-width: 992px){
+    .logo-font {
+        font-size: xx-large;
+    }
 }
