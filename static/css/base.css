@@ -7,6 +7,8 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+/* base.html */
+
 #nav-buttons{
     text-align: justify;
 }
@@ -35,11 +37,17 @@ body {
     margin: 5px;
 }
 
+/* index.html */
+
+#main-links {
+    margin-top: 25%;
+}
+
 /* Media queries -----------------*/
 
 @media (max-width: 992px){
     body {
-        margin-top: 160px; /* Top margin so the body appears below the header, not behind it. */
+        margin-top: 200px; /* Top margin so the body appears below the header, not behind it. */
     }
 
     .logo-font {
