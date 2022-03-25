@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 1,
+        "model": "books.genre",
+        "fields": {
+            "name": "biography",
+            "friendly_name": "Biography"
+        }
+    },
+    {
+      "pk": 2,
+      "model": "books.genre",
+      "fields": {
+          "name": "classics",
+          "friendly_name": "Classics"
+      }
+    },
+    {
+        "pk": 3,
+        "model": "books.genre",
+        "fields": {
+            "name": "crime",
+            "friendly_name": "Crime"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "books.genre",
+        "fields": {
+            "name": "fiction",
+            "friendly_name": "Fiction"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "books.genre",
+        "fields": {
+            "name": "nonfiction",
+            "friendly_name": "Non-fiction"
+        }
+    }
+]

@@ -1,0 +1,702 @@
+[
+  {
+     "pk":1,
+     "model":"books.book",
+     "fields":{
+        "isbn":"078624223X",
+        "name":"A Beautiful Mind",
+        "author":"Sylvia Nasar",
+        "blurb":"Relates how mathematical genius John Forbes Nash, Jr., suffered a breakdown at age thirty-one and was diagnosed with schizophrenia, but experienced a remission of his illness thirty years later.",
+        "price":25.99,
+        "genre":1,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"a_beautiful_mind.jpg"
+     }
+  },
+  {
+     "pk":2,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9044541862",
+        "name":"Barracoon: The Story of the Last 'Black Cargo'",
+        "author":"Zora Neale Hurston",
+        "blurb":"In 1927, Zora Neale Hurston went to Plateau, Alabama, just outside Mobile, to interview eighty-six-year-old Cudjo Lewis. Of the millions of men, women, and children transported from Africa to America as slaves, Cudjo was then the only person alive to tell the story of this integral part of the nation's history. Hurston was there to record Cudjo's firsthand account of the raid that led to his capture and bondage fifty years after the Atlantic slave trade was outlawed in the United States.",
+        "price":14.59,
+        "genre":1,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"barracoon.jpg"
+     }
+  },
+  {
+     "pk":3,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0805023968",
+        "name":"Churchill: A Life",
+        "author":"Martin Gilbert",
+        "blurb":"Draws on previously unavailable materials to provide an in-depth portrait of Churchill as a leader swept into history's most tumultuous era.",
+        "price":9.26,
+        "genre":1,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"churchill.jpg"
+     }
+  },
+  {
+     "pk":4,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0812971787",
+        "name":"Enrique's Journey: The Story of a Boy's Dangerous Odyssey to Reunite with His Mother",
+        "author":"Sonia Nazario",
+        "blurb":"Based on the Los Angeles Times newspaper series that won two Pulitzer Prizes, one for feature writing and another for feature photography, this page-turner about the power of family is a popular text in classrooms and a touchstone for communities across the country to engage in meaningful discussions about this essential American subject.",
+        "price":12.52,
+        "genre":1,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"enriques_journey.jpg"
+     }
+  },
+  {
+     "pk":5,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0060085894",
+        "name":"Frida: A Biography of Frida Kahlo",
+        "author":"Hayden Herrera",
+        "blurb":"An in-depth biography of Mexican artist Frida Kahlo details her haunting and original painting style, her turbulent marriage to muralist Diego Rivera, her association with communism, and her love of Mexican culture and folklore. Reprint. (A Miramax film, directed by Julie Taymor, releasing Spring 2002, starring Salma Hayek & Alfred Molina) (Biography)",
+        "price":18.44,
+        "genre":1,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"frida.jpg"
+     }
+  },
+  {
+     "pk":6,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0385486804",
+        "name":"Into the Wild",
+        "author":"Jon Krakauer",
+        "blurb":"Krakauer's page-turning bestseller explores a famed missing person mystery while unraveling the larger riddles it holds: the profound pull of the American wilderness on our imagination; the allure of high-risk activities to young men of a certain cast of mind; the complex, charged bond between fathers and sons.",
+        "price":20.72,
+        "genre":1,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"into_the_wild.jpg"
+     }
+  },
+  {
+     "pk":7,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0679746323",
+        "name":"Mao: The Unknown Story",
+        "author":"Jung Chang and Jon Halliday",
+        "blurb":"The most authoritative life of the Chinese leader every written, Mao: The Unknown Story is based on a decade of research, and on interviews with many of Mao's close circle in China who have never talked before -- and with virtually everyone outside China who had significant dealings with him.",
+        "price":3.52,
+        "genre":1,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"mao.jpg"
+     }
+  },
+  {
+     "pk":8,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0553263811",
+        "name":"The Minds of Billy Milligan",
+        "author":"Daniel Keyes",
+        "blurb":"Out of control of his actions, Billy Milligan was a man tormented by twenty-four distinct personalities battling for supremacy over his body--a battle that culminated when he awoke in jail, arrested for the kidnap and rape of three women.",
+        "price":3.21,
+        "genre":1,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"the_minds_of_billy_milligan.jpg"
+     }
+  },
+  {
+     "pk":9,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780143127857",
+        "name":"Napoleon: A Life",
+        "author":"Andrew Roberts",
+        "blurb":"Andrew Roberts's Napoleon is the first one-volume biography to take advantage of the recent publication of Napoleon's thirty-three thousand letters, which radically transform our understanding of his character and motivation.",
+        "price":17.41,
+        "genre":1,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"napolean.jpg"
+     }
+  },
+  {
+     "pk":10,
+     "model":"books.book",
+     "fields":{
+        "isbn":"1250134439",
+        "name":"Prince: A Private View",
+        "author":"Afshin Shahidi",
+        "blurb":"Prince: A Private View compiles photographer Afshin Shahidi's work into a journey through Prince's extraordinary life. With never-before-seen photos, it is the ultimate collection of shots of Prince. Brief, but complete and rich, stories about Shahidi and Prince's collaboration and time together are alternately incisive, personal, and even funny.",
+        "price":15.00,
+        "genre":1,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0418201317011949M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"prince.jpg"
+     }
+  },
+  {
+     "pk":11,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0241968585",
+        "name":"One Hundred Years of Solitude",
+        "author":"Gabriel García Márquez",
+        "blurb":"Many years later, as he faced the firing squad, Colonel Aureliano Buendía was to remember that distant afternoon when his father took him to discover ice.",
+        "price":8.19,
+        "genre":2,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/0900631B81B0C2D9M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"one_hundred_years.jpg"
+     }
+  },
+  {
+     "pk":12,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780449213940",
+        "name":"All Quiet on the Western Front",
+        "author":"Erich Maria Remarque",
+        "blurb":"This is the testament of Paul Bäumer, who enlists with his classmates in the German army during World War I. They become soldiers with youthful enthusiasm. But the world of duty, culture, and progress they had been taught breaks in pieces under the first bombardment in the trenches.",
+        "price":12.69,
+        "genre":2,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0510201317010521M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"all_quiet_on_the_western_front.jpg"
+     }
+  },
+  {
+     "pk":13,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0062073486",
+        "name":"And Then There Were None",
+        "author":"Agatha Christie",
+        "blurb":"Ten people, each with something to hide and something to fear, are invited to an isolated mansion on Indian Island by a host who, surprisingly, fails to appear. On the island they are cut off from everything but each other and the inescapable shadows of their own past lives. One by one, the guests share the darkest secrets of their wicked pasts. And one by one, they die...",
+        "price":6.29,
+        "genre":2,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0430201405053680M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"and_then_there_were_none.jpg"
+     }
+  },
+  {
+     "pk":14,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9781853262715",
+        "name":"Anna Karenina",
+        "author":"Leo Tolstoy",
+        "blurb":"Anna Karenina is one of the most loved and memorable heroines of literature. Her overwhelming charm dominates a novel of unparalleled richness and density.",
+        "price":2.69,
+        "genre":2,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/0900631B81C9387BM.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"anna_karenina.jpg"
+     }
+  },
+  {
+     "pk":15,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0060837020",
+        "name":"The Bell Jar: Sylvia Plath",
+        "author":"Sylvia Plath",
+        "blurb":"The Bell Jar chronicles the crack-up of Esther Greenwood: young, brilliant, beautiful, and enormously talented, but slowly going under--maybe for the last time. Sylvia Plath masterfully draws the reader into Esther's breakdown with such intensity that Esther's neurosis becomes completely understandable and even rational, as probable and accessible an experience as going to the movies.",
+        "price":8.91,
+        "genre":2,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0918201520303373C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"the_bell_jar.jpg"
+    }
+  },
+  {
+     "pk":16,
+     "model":"books.book",
+     "fields":{
+        "isbn":"1400033411",
+        "name":"Beloved",
+        "author":"Toni Morrison",
+        "blurb":"Sethe, its protagonist, was born a slave and escaped to Ohio, but eighteen years later she is still not free. She has too many memories of Sweet Home, the beautiful farm where so many hideous things happened.",
+        "price":4.47,
+        "genre":2,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0918201520303373C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"beloved.jpg"
+     }
+  },
+  {
+     "pk":17,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0679745653",
+        "name":"Breakfast at Tiffany's: A Short Novel and Three Stories",
+        "author":"Truman Capote",
+        "blurb":"This volume also includes three of Capote's best-known stories, \"House of Flowers,\" \"A Diamond Guitar,\" and \"A Christmas Memory,\" which the Saturday Review called \"one of the most moving stories in our language.\" It is a tale of two innocents--a small boy and the old woman who is his best friend--whose sweetness contains a hard, sharp kernel of truth.",
+        "price":7.25,
+        "genre":2,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1119201520340305C.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"breakfast_at_tiffanys.jpg"
+     }
+  },
+  {
+     "pk":18,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0241472733",
+        "name":"Brideshead Revisited: The Sacred and Profane Memories of Captain Charles Ryder",
+        "author":"Evelyn Waugh",
+        "blurb":"The most nostalgic and reflective of Evelyn Waugh's novels, Brideshead Revisited looks back to the golden age before the Second World War. It tells the story of Charles Ryder's infatuation with the Marchmains and the rapidly disappearing world of privilege they inhabit.",
+        "price":7.37,
+        "genre":2,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072274M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"brideshead_revisited.jpg"
+     }
+  },
+  {
+     "pk":19,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780553380163",
+        "name":"A Brief History of Time",
+        "author":"Stephen Hawking",
+        "blurb":"A landmark volume in science writing by one of the great minds of our time, Stephen Hawking's book explores such profound questions as: How did the universe begin--and what made its start possible? Does time always flow forward? Is the universe unending--or are there boundaries? Are there other dimensions in space? What will happen when it all ends?",
+        "price":19.99,
+        "genre":2,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072924M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"a_brief_history_of_time.jpg"
+     }
+  },
+  {
+     "pk":20,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0140449264",
+        "name":"The Count of Monte Cristo",
+        "author":"Alexander Dumas",
+        "blurb":"Thrown in prison for a crime he has not committed, Edmond Dantès is confined to the grim fortress of If. There he learns of a great hoard of treasure hidden on the Isle of Monte Cristo and he becomes determined not only to escape, but also to use the treasure to plot the destruction of the three men responsible for his incarceration.",
+        "price":9.50,
+        "genre":2,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0821201317103183M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"count_of_monte_cristo.jpg"
+     }
+  },
+  {
+     "pk":21,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780241956830",
+        "name":"In Cold Blood",
+        "author":"Truman Capote",
+        "blurb":"Dick became convinced that Perry was that rarity, \"a natural killer\" - absolutely sane, but conscienceless, and capable of dealing, with or without motive, the coldest-blooded deathblows",
+        "price":7.99,
+        "genre":3,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/0900631B81D676AEM.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"in_cold_blood.jpg"
+     }
+  },
+  {
+     "pk":22,
+     "model":"books.book",
+     "fields":{
+        "isbn":"1787461181",
+        "name":"Helter Skelter: The True Story of the Manson Murders",
+        "author":"Vincent Bugliosi & Curt Gentry",
+        "blurb":"On August 9th 1969, seven people were found shot, stabbed and bludgeoned to death in Los Angeles. America watched in fascinated horror as the killers were tried and convicted. But the real questions went unanswered.",
+        "price":8.19,
+        "genre":3,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0917201317033820M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"helter_skelter.jpg"
+     }
+  },
+  {
+     "pk":23,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0393868494",
+        "name":"The Stranger Beside Me",
+        "author":"Ann Rule",
+        "blurb":"In 1971, while working the late-shift at a Seattle crisis clinic, true-crime writer Ann Rule struck up a friendship with a sensitive, charismatic young coworker: Ted Bundy. Three years later, eight young women disappeared in seven months, and Rule began tracking a brutal mass murderer.",
+        "price":15.07,
+        "genre":3,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0927201317061305M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"the_stranger_beside_me.jpg"
+     }
+  },
+  {
+     "pk":24,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0425212181",
+        "name":"Zodiac: The Shocking True Story of the Hunt for the Nation's Most Elusive Serial Killer",
+        "author":"Robert Graysmith",
+        "blurb":"A sexual sadist, the Zodiac killer took pleasure in torture and murder. His first victims were a teenage couple, stalked and shot dead in a lovers' lane. After another slaying, he sent his first mocking note to authorities, promising he would kill more. The official tally of his victims was six. He claimed thirty-seven dead. The real toll may have reached fifty.",
+        "price":3.80,
+        "genre":3,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1023201317051585M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"zodiac.jpg"
+     }
+  },
+  {
+     "pk":25,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0340992859",
+        "name":"Midnight in the Garden of Good and Evil",
+        "author":"John Berendt",
+        "blurb":"Shots rang out in Savannah's grandest mansion in the misty,early morning hours of May 2, 1981. Was it murder or self-defense? For nearly a decade, the shooting and its aftermath reverberated throughout this hauntingly beautiful city of moss-hung oaks and shaded squares.",
+        "price":8.99,
+        "genre":3,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1108201317050996M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"midnight_in_the_garden_of_good_and_evil.jpg"
+     }
+  },
+  {
+     "pk":26,
+     "model":"books.book",
+     "fields":{
+        "isbn":"1787460614",
+        "name":"Mindhunter: Inside the FBI Elite Serial Crime Unit",
+        "author":"John Douglas and Mark Olshaker",
+        "blurb":"John Douglas is a former FBI Special Agent and expert in criminal profiling and behavioural science. He made a career of looking evil in the eye - and understanding it. No wonder that he was the inspiration for Special Agent Jack Crawford in The Silence of the Lambs, as well as the film's consultant on the reality of serial killers.",
+        "price":7.98,
+        "genre":3,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0219201502115503C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"mindhunter.jpg"
+     }
+  },
+  {
+     "pk":27,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0825305934",
+        "name":"If I Did It: Confessions of the Killer",
+        "author":"Dominick Dunne and Pablo Fenjves",
+        "blurb":"On July 31, 2007 Federal Court Judge A. Jay Cristol awarded the Goldman family the rights to If I Did It. Thus began one of the strangest odysseys in publishing history.",
+        "price":9.99,
+        "genre":3,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0610201317080834M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"if_i_did_it.jpg"
+     }
+  },
+  {
+     "pk":28,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780553813531",
+        "name":"The Devil In The White City",
+        "author":"Erik Larson",
+        "blurb":"The architect was Daniel H. Burnham, the driving force behind the White City, the massive, visionary landscape of white buildings set in a wonderland of canals and gardens.",
+        "price":6.66,
+        "genre":3,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/0900631B818ABCB9M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"the_devil_in_the_white_city.jpg"
+     }
+  },
+  {
+     "pk":29,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780330419123",
+        "name":"Under The Banner of Heaven: A Story of Violent Faith",
+        "author":"Jon Krakauer",
+        "blurb":"Brothers Ron and Dan Lafferty insist they were commanded to kill by God. In Under The Banner of Heaven, Jon Krakauer's investigation is a meticulously researched, bone-chilling narrative of polygamy, savage violence and unyielding faith: an incisive look inside isolated Mormon Fundamentalist communities in America, this gripping work of non-fiction illuminates an otherwise confounding realm of human behaviour.",
+        "price":8.20,
+        "genre":3,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0422201517022488M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"under_the_banner_of_heaven.jpg"
+     }
+  },
+  {
+     "pk":30,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9781784759414",
+        "name":"The Innocent Man",
+        "author":"John Grisham",
+        "blurb":"In 1982, a 21 year-old cocktail waitress, Debra Sue Carter, was raped and murdered, and for five years the crime went unsolved. Finally, desperate for someone to blame, police came to suspect Ron Williamson and his friend Dennis Fritz. The two were finally arrested in 1987 and charged with murder.",
+        "price":7.16,
+        "genre":3,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0113201417050002M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"the_innocent_man.jpg"
+     }
+  },
+  {
+     "pk":31,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0312427298",
+        "name":"The Red Tent",
+        "author":"Anita Diamant",
+        "blurb":"In the Bible, Dinah's life is only hinted at in a brief and violent detour within the more familiar chapters of the Book of Genesis that tell of her father, Jacob, and his twelve sons.",
+        "price":11.17,
+        "genre":4,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0213201417022274M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"the_red_tent.jpg"
+     }
+  },
+  {
+     "pk":32,
+     "model":"books.book",
+     "fields":{
+        "isbn":"1451617488",
+        "name":"The Dovekeepers",
+        "author":"Alice Hoffman",
+        "blurb":"Nearly two thousand years ago, nine hundred Jews held out for months against armies of Romans on Masada, a mountain in the Judean desert. According to the ancient historian Josephus, two women and five children survived. Based on this tragic and iconic event, Hoffman's novel is a spellbinding tale of four extraordinarily bold, resourceful, and sensuous women, each of whom has come to Masada by a different path.",
+        "price":12.44,
+        "genre":4,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1028201517024563M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"the_dovekeepers.jpg"
+     }
+  },
+  {
+     "pk":33,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9781405928328",
+        "name":"The Winter King: A Novel of Arthur",
+        "author":"Bernard Cromwell",
+        "blurb":"Uther, the High King of Britain, is dead. His only heir is the infant Mordred. Yet each of the country's lesser kings seek to claim the crown for themselves. While they squabble and spoil for war, a host of Saxon armies gather, preparing for invasion. But no one has counted on the fearsome warlord Arthur.",
+        "price":5.00,
+        "genre":4,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0422201617033665M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"the_winter_king.jpg"
+     }
+  },
+  {
+     "pk":34,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0141180412",
+        "name":"Kristin Lavransdatter: 1:The Wreath",
+        "author":"Sigrid Undset",
+        "blurb":"Kristin Lavransdatter interweaves political, social, and religious history with the daily aspects of family life to create a colorful, richly detailed tapestry of Norway during the fourteenth-century.",
+        "price":6.00,
+        "genre":4,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0915201413433903C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"kristin_lavransdatter.jpg"
+     }
+  },
+  {
+     "pk":35,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0312429983",
+        "name":"Wolf Hall",
+        "author":"Hilary Mantel",
+        "blurb":"England in the 1520s is a heartbeat from disaster. If the king dies without a male heir, the country could be destroyed by civil war. Henry VIII wants to annul his marriage of twenty years and marry Anne Boleyn. The pope and most of Europe opposes him. Into this impasse steps Thomas Cromwell: a wholly original man, a charmer and a bully, both idealist and opportunist, astute in reading people, and implacable in his ambition. But Henry is volatile: one day tender, one day murderous. Cromwell helps him break the opposition, but what will be the price of his triumph?",
+        "price":1.22,
+        "genre":4,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0430201405113681M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"wolf_hall.jpg"
+     }
+  },
+  {
+     "pk":36,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0743227441",
+        "name":"The Other Boleyn Girl",
+        "author":"Philippa Gregory",
+        "blurb":"When Mary Boleyn comes to court as an innocent girl of fourteen, she catches the eye of the handsome and charming Henry VIII. Dazzled by the king, Mary falls in love with both her golden prince and her growing role as unofficial queen. However, she soon realizes just how much she is a pawn in her family's ambitious plots as the king's interest begins to wane, and soon she is forced to step aside for her best friend and rival: her sister, Anne. With her own destiny suddenly unknown, Mary realizes that she must defy her family and take fate into her own hands.",
+        "price":2.80,
+        "genre":4,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0401201417083996M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"the_other_boleyn_girl.jpg"
+     }
+  },
+  {
+     "pk":37,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780060825409",
+        "name":"Abundance, a Novel of Marie Antoinette",
+        "author":"Sena Jeter Naslund",
+        "blurb":"Marie Antoinette was a child of fourteen when her mother, the Empress of Austria, arranged for her to leave her family and her country to become the wife of the fifteen-year-old Dauphin, the future King of France. Coming of age in the most public of arenas, she warmly embraces her adopted nation and its citizens. She shows her new husband nothing but love and encouragement, though he repeatedly fails to consummate their marriage and in so doing is unable to give her a child and an heir to the throne.",
+        "price":1.71,
+        "genre":4,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0828201517030241M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"abundance.jpg"
+     }
+  },
+  {
+     "pk":38,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780007350896",
+        "name":"A Tale of Two Cities",
+        "author":"Charles Dickens",
+        "blurb":"Set before and during the French Revolution in the cities of Paris and London, A Tale of Two Cities tells the story of Dr Manette's release from imprisonment in the Bastille and his reunion with daughter, Lucie. A French aristocrat Darnay and English lawyer Carton compete in their love for Lucie and the ensuing tale plays out against the menacing backdrop of the French Revolution and the shadow of the guillotine.",
+        "price":18.33,
+        "genre":4,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0403201417141773M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"a_tale_of_two_cities.jpg"
+     }
+  },
+  {
+     "pk":39,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0743428188",
+        "name":"Twentieth Wife,",
+        "author":"Indu Sundaresan",
+        "blurb":"An enchanting historical epic of grand passion and adventure, this debut novel tells the captivating story of one of India's most controversial empresses -- a woman whose brilliance and determination trumped myriad obstacles, and whose love shaped the course of the Mughal Empire.",
+        "price":11.11,
+        "genre":4,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0715201417203832M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"twentieth_wife.jpg"
+     }
+  },
+  {
+     "pk":40,
+     "model":"books.book",
+     "fields":{
+        "isbn":"184724114X",
+        "name":"Measuring the World",
+        "author":"Daniel Kehlmann",
+        "blurb":"Measuring the World is a novel of rare charm and readability, distinguished by its sly humour and unforgettable characterization. It brings the two eccentric geniuses to life, their longings and their weaknesses, their balancing act between loneliness and love, absurdity and greatness, failure and success.",
+        "price":7.47,
+        "genre":4,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0430201405213832M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"measuring_the_world.jpg"
+     }
+  },
+  {
+     "pk":41,
+     "model":"books.book",
+     "fields":{
+        "isbn":"1250062187",
+        "name":"The Sixth Extinction: An Unnatural History",
+        "author":"Elizabeth Kolbert",
+        "blurb":"Over the last half-billion years, there have been Five mass extinctions, when the diversity of life on earth suddenly and dramatically contracted. Scientists around the world are currently monitoring the sixth extinction, predicted to be the most devastating extinction event since the asteroid impact that wiped out the dinosaurs. This time around, the cataclysm is us.",
+        "price":14.40,
+        "genre":5,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0430201405232442M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"the_sixth_extinction.jpg"
+     }
+  },
+  {
+     "pk":42,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0393343146",
+        "name":"The Art of Cruelty: A Reckoning",
+        "author":"Maggie Nelson",
+        "blurb":"Reality and entertainment crowd our fields of vision with brutal imagery. The pervasiveness of images of torture, horror and war has all but demolished the twentieth-century hope that such imagery might shock us into a less alienated state or aid in the creation of a just social order.",
+        "price":18.99,
+        "genre":5,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0519201417080443M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"the_art_of_cruelty.jpg"
+     }
+  },
+  {
+     "pk":43,
+     "model":"books.book",
+     "fields":{
+        "isbn":"1612197493",
+        "name":"How To Do Nothing: Resisting the Attention Economy",
+        "author":"Jenny Odell",
+        "blurb":"Nothing is harder to do these days than nothing. We find every last minute captured, optimised, or appropriated as a financial resource for the technologies we use daily. We consume algorithmic versions of ourselves, submit our free time to numerical evaluation, and maintain personal brands in digital space.",
+        "price":15.42,
+        "genre":5,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/0900631B8140782DM.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"how_to_do_nothing.jpg"
+     }
+  },
+  {
+     "pk":44,
+     "model":"books.book",
+     "fields":{
+        "isbn":"1595586431",
+        "name":"The New Jim Crow",
+        "author":"Michelle Alexander",
+        "blurb":"In a bold and innovative argument, a rising legal star shows readers how the mass incarceration of a disproportionate number of black men amounts to a devastating system of racial control. This is a terrifying reality that exists in the UK as much as in the US.",
+        "price":2.87,
+        "genre":5,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0421201520311379C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"the_new_jim_crow.jpg"
+     }
+  },
+  {
+     "pk":45,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0141033576",
+        "name":"Thinking, Fast and Slow",
+        "author":"Daniel Kahneman",
+        "blurb":"Why is there more chance we'll believe something if it's in a bold type face? Why are judges more likely to deny parole before lunch? Why do we assume a good-looking person will be more competent? The answer lies in the two ways we make choices: fast, intuitive thinking, and slow, rational thinking. This book reveals how our minds are tripped up by error and prejudice (even when we think we are being logical), and gives you practical techniques for slower, smarter thinking. It will enable to you make better decisions at work, at home, and in everything you do.",
+        "price":10.39,
+        "genre":5,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0716201503421212M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"thinking_fast_and_slow.jpg"
+     }
+  },
+  {
+     "pk":46,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9781784161859",
+        "name":"A Short History of Nearly Everything",
+        "author":"Bill Bryson",
+        "blurb":"Bill Bryson describes himself as a reluctant traveller, but even when he stays safely at home he can't contain his curiosity about the world around him. A Short History of Nearly Everything is his quest to understand everything that has happened from the Big Bang to the rise of civilization - how we got from there, being nothing at all, to here, being us.",
+        "price":9.34,
+        "genre":5,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0722201417110136M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"a_short_history_of_nearly_everything.jpg"
+     }
+  },
+  {
+     "pk":47,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9781620402528",
+        "name":"Dreamland: The True Tale of America's Opiate Epidemic",
+        "author":"Sam Quinones",
+        "blurb":"In 1929, in the blue-collar city of Portsmouth, Ohio, a company built a swimming pool the size of a football field; named Dreamland, it became the vital center of the community. Now, addiction has devastated Portsmouth, as it has hundreds of small rural towns and suburbs across America--addiction like no other the country has ever faced. How that happened is the riveting story of Dreamland.",
+        "price":12.59,
+        "genre":5,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1017201420511297C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"dreamland.jpg"
+     }
+  },
+  {
+     "pk":48,
+     "model":"books.book",
+     "fields":{
+        "isbn":"184708141X",
+        "name":"Nothing To Envy: Real Lives In North Korea",
+        "author":"Barbara Demick",
+        "blurb":"A spectacularly revealing and harrowing portrait of ordinary lives in the world's least ordinary country, North Korea North Korea is Orwell's 1984 made reality: it is the only country in the world not connected to the internet; Gone with the Wind is a dangerous, banned book; during political rallies, spies study your expression to check your sincerity.",
+        "price":8.19,
+        "genre":5,
+        "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0919201417043014M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image":"nothing_to_envy.jpg"
+     }
+  },
+  {
+     "pk":49,
+     "model":"books.book",
+     "fields":{
+        "isbn":"9780812979329",
+        "name":"Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity",
+        "author":"Katherine Boo",
+        "blurb":"In this breathtaking book by Pulitzer Prize winner Katherine Boo, a bewildering age of global change and inequality is made human through the dramatic story of families striving toward a better life in Annawadi, a makeshift settlement in the shadow of luxury hotels near the Mumbai airport.",
+        "price":19.11,
+        "genre":5,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1015201417131329M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"behind_the_beautiful_forevers.jpg"
+     }
+  },
+  {
+     "pk":50,
+     "model":"books.book",
+     "fields":{
+        "isbn":"0393242145",
+        "name":"Underland: A Deep Time Journey",
+        "author":"Robert MacFarlane",
+        "blurb":"Hailed as \"the great nature writer of this generation\" (Wall Street Journal), Robert Macfarlane is the celebrated author of books about the intersections of the human and the natural realms. In Underland, he delivers his masterpiece: an epic exploration of the Earth's underworlds as they exist in myth, literature, memory, and the land itself.",
+        "price":8.99,
+        "genre":5,
+        "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1202201412542357M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image":"underland.jpg"
+     }
+  }
+]
