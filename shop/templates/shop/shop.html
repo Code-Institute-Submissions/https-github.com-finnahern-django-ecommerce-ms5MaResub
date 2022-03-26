@@ -3,11 +3,6 @@
 
 {% block page_header %}
 <div class="container header-container">
-    <div class="row">
-        <div class="col">
-            <h2>SHOP.HTML</h2>
-        </div>
-    </div>
 </div>
 {% endblock %}
 
@@ -27,11 +22,11 @@
                         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
                             <div class="card h-100 border-0">
                                 {% if book.image %}
-                                <a href="">
+                                <a href="{% url 'product_detail' book.id %}">
                                     <img class="card-img-top img-fluid img-size" src="{{ book.image_url }}" alt="{{ book.name }}">
                                 </a>
                                 {% else %}
-                                <a href="">
+                                <a href="{% url 'product_detail' book.id %}">
                                     <img class="card-img-top img-fluid img-size" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ book.name }}">
                                 </a>
                                 {% endif %}
