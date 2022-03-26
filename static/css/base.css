@@ -46,6 +46,13 @@ body {
     margin-top: 25%;
 }
 
+/* shop.html */
+
+.img-size {
+    height: 460px;
+    width: 300px;
+}
+
 /* Media queries -----------------*/
 
 @media (max-width: 992px){
