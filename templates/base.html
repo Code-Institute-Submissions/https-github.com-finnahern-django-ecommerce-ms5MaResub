@@ -45,7 +45,7 @@
                 </div>
                 <!-- Search bar -->
                 <div class="col-12 col-lg-8 my-auto mt-2 py-1 py-lg-0">
-                    <form method="GET" action="#">
+                    <form method="GET" action="{% url 'shop' %}">
                         <div class="input-group w-100">
                             <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search for titles, authors, genres...">
                             <div class="input-group-append">
@@ -123,7 +123,7 @@
         </header>
 
         {% if messages %}
-        <div class="message-container"></div>
+            <div class="message-container"></div>
         {% endif %}
 
         {% block page_header %}

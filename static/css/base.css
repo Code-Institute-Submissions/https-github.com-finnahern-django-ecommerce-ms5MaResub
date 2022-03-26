@@ -56,7 +56,8 @@ body {
 /* product_detail.html */
 
 #book-title {
-    font-size: 200%;
+    font-size: 150%;
+    font-weight: bold;
 }
 
 #book-price {
