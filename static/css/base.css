@@ -3,11 +3,14 @@ html {
 }
 
 body {
-    margin-top: 120px; /* Top margin so the body appears below the header, not behind it. */
     font-family: 'Playfair Display', serif;
 }
 
 /* base.html */
+
+.header-container {
+    height: 120px; /* Set header container height so the body appears below the header, not behind it. */
+}
 
 #nav-buttons{
     text-align: justify;
@@ -46,8 +49,8 @@ body {
 /* Media queries -----------------*/
 
 @media (max-width: 992px){
-    body {
-        margin-top: 200px; /* Top margin so the body appears below the header, not behind it. */
+    .header-container {
+        height: 200px; /* Set header container height so the body appears below the header, not behind it. */
     }
 
     .logo-font {

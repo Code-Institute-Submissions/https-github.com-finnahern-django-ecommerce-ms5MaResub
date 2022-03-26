@@ -22,6 +22,5 @@ class GenreAdmin(admin.ModelAdmin):
         "name",
     )
 
-
 admin.site.register(Book, BookAdmin)
 admin.site.register(Genre, GenreAdmin)
