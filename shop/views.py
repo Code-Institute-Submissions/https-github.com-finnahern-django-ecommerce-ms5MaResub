@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Book
+from .models import Book, Genre
 
 
 def all_products(request):
@@ -11,7 +11,11 @@ def all_products(request):
     """
 
     books = Book.objects.all()
+    genres = Genre.objects.all()
+    genre = None
     query = None
+    # Initialise empty query set to be populated below
+    queries = Book.objects.none()
 
     if request.GET:
         if "q" in request.GET:
@@ -19,8 +23,20 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria")
                 return redirect(reverse("shop"))
+            if "biography" in query.lower():
+                queries = queries | Q(genre__exact=genres[0])
+            if "classic" in query.lower():
+                queries = queries | Q(genre__exact=genres[1])
+            if "crime" in query.lower():
+                queries = queries | Q(genre__exact=genres[2])
+            if "fiction" in query.lower():
+                queries = queries | Q(genre__exact=genres[3])
+            if ("non" in query.lower() and "fiction" in query.lower()) or "nonfiction" in query.lower():
+                queries = queries | Q(genre__exact=genres[4])
 
-            queries = Q(name__icontains=query) | Q(author__icontains=query)
+            query_array = query.split()
+            for x in query_array:
+                queries = queries | Q(name__icontains=x) | Q(author__icontains=x)
             books = books.filter(queries)
 
     context = {
