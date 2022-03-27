@@ -17,7 +17,7 @@ body {
 }
 
 .main-logo-link, .main-logo-link:hover {
-    color: white;
+    color: white !important;
     padding: 0;
 }
 
@@ -29,10 +29,22 @@ body {
     background-color: #6c8e02; 
 }
 
-.btn-black {
+.btn-black,
+.btn-black:hover {
     background: black;
     color: white;
-    border: black;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
 }
 
 .nav-btn {
