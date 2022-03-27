@@ -200,7 +200,7 @@
      "model":"shop.book",
      "fields":{
         "isbn":"0060837020",
-        "name":"The Bell Jar: Sylvia Plath",
+        "name":"The Bell Jar",
         "author":"Sylvia Plath",
         "blurb":"The Bell Jar chronicles the crack-up of Esther Greenwood: young, brilliant, beautiful, and enormously talented, but slowly going under--maybe for the last time. Sylvia Plath masterfully draws the reader into Esther's breakdown with such intensity that Esther's neurosis becomes completely understandable and even rational, as probable and accessible an experience as going to the movies.",
         "price":10.99,

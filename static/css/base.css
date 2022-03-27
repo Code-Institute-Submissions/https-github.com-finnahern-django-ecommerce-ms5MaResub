@@ -60,6 +60,10 @@ body {
     font-weight: bold;
 }
 
+.genre-link {
+    color: black;
+}
+
 #book-price {
     font-size: 175%;
     font-weight: bold;
