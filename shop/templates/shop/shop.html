@@ -10,13 +10,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center mt-3">
-                <h2 class="logo-font">All Books</h2>
+                {% if search_term == None %}
+                    <h2 class="logo-font">All Books</h2>
+                {% else %}
+                    <h2 class="logo-font">"{{ search_term }}"</h2>
+                {% endif %}
                 <hr class="w-50 mb-1 mx-auto">
             </div>
         </div>
         <div class="row">
             <div class="book-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
                 <div class="row">
                     {% for book in books %}
                         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
@@ -44,7 +47,7 @@
                             </div>
                         </div>
                     {% endfor %}
-                </div>
+                </div> 
             </div>
         </div>
     </div>

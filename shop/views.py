@@ -12,7 +12,6 @@ def all_products(request):
 
     books = Book.objects.all()
     genres = Genre.objects.all()
-    genre = None
     query = None
     # Initialise empty query set to be populated below
     queries = Book.objects.none()
@@ -29,7 +28,7 @@ def all_products(request):
                 queries = queries | Q(genre__exact=genres[1])
             if "crime" in query.lower():
                 queries = queries | Q(genre__exact=genres[2])
-            if "fiction" in query.lower():
+            if "fiction" in query.lower() and "non" not in query.lower():
                 queries = queries | Q(genre__exact=genres[3])
             if ("non" in query.lower() and "fiction" in query.lower()) or "nonfiction" in query.lower():
                 queries = queries | Q(genre__exact=genres[4])
