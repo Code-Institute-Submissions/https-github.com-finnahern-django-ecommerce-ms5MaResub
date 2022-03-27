@@ -20,9 +20,7 @@
         <div class="row my-3">
             <div class="col-12 col-md-6 order-md-first">
                 <p class="text-muted mt-3 text-center text-md-left">
-                    {% if search_term != 'None' %}
-                        {{ books|length }} books{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-                    {% endif %}
+                    {{ books|length }} books{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                 </p>
             </div>
         </div>

@@ -8,8 +8,8 @@ https://www.kaggle.com/yamqwe/bulk-bookstore-dataset
 
 As a customer I want to be able to:
 
-- Browse books and add ones I want to my basket without interrupting my navigation of the site.
-- Specify the quantity of each book I want to add to my basket so I can order multiple copies of a book with one click.
+- Browse books and add ones I want to my cart without interrupting my navigation of the site.
+- Specify the quantity of each book I want to add to my cart so I can order multiple copies of a book with one click.
 - Search for books, so I can quickly find if what I'm looking for is available.
 - Pay for my order using my bank card, with as few barriers to this transaction as possible.
 - View my order history so I can see when I made previous purchases, what I ordered and how much I paid.
