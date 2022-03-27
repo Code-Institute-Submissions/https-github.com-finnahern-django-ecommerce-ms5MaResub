@@ -12,9 +12,7 @@ As a customer I want to be able to:
 - Specify the quantity of each book I want to add to my cart so I can order multiple copies of a book with one click.
 - Search for books, so I can quickly find if what I'm looking for is available.
 - Pay for my order using my bank card, with as few barriers to this transaction as possible.
-- View my order history so I can see when I made previous purchases, what I ordered and how much I paid.
 - Receive a visual cue confirming my order, so I know it's been processed correctly.
-- Save and update personal details to my account, such as my shipping address so I can checkout quickly in the future.
 - View detailed information about each book in the store, to help decide if it's right for me.
 
 ### Store owner
