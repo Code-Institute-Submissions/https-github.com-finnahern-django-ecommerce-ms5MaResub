@@ -72,13 +72,24 @@ body {
     font-weight: bold;
 }
 
-.book-link {
-    color: black;
+.link-dec-none{
+    color: black !important;
 }
 
 #book-price {
     font-size: 175%;
     font-weight: bold;
+}
+
+/* cart.html */
+
+.w-15 {
+    width: 15% !important;
+}
+
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 /* Media queries -----------------*/
