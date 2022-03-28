@@ -87,6 +87,10 @@ body {
     width: 15% !important;
 }
 
+.cart-image-width {
+    width: 20% !important;
+}
+
 .update-link,
 .remove-item {
     cursor: pointer;

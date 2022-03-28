@@ -33,7 +33,7 @@
 
                                 {% for item in cart_items %}
                                     <tr>
-                                        <td class="p-3 w-25">
+                                        <td class="p-3 cart-image-width">
                                             <img class="img-fluid rounded" src="{{ item.book.image_url }}">
                                         </td>
                                         <td class="py-3">
@@ -45,21 +45,21 @@
                                             <p class="my-0">{{ item.book.price }}</p>
                                         </td>
                                         <td class="py-3 w-15">
-                                            <form class="form update-qty" method="POST" action="">
+                                            <form class="form update-qty" method="POST" action="{% url 'edit_cart' item.book.pk %}">
                                                 {% csrf_token %}
                                                 <div class="form-group">
                                                     <div class="input-group">
                                                         <!-- Decrement quantity button -->
                                                         <div class="input-group-prepend">
-                                                            <button class="decrement-qty btn btn-sm border" data-item_id="{{ item.book.id }}" id="decrement-qty_{{ item.book.id }}">
+                                                            <button class="decrement-qty btn btn-sm border" data-item_id="{{ item.book.pk }}" id="decrement-qty_{{ item.book.pk }}">
                                                                 <span><i class="fas fa-minus fa-sm"></i></span>
                                                             </button>
                                                         </div>
                                                         <!-- Quantity field -->
-                                                        <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.book.id }}" id="id_qty_{{ item.book.id }}">
+                                                        <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.book.pk }}" id="id_qty_{{ item.book.pk }}">
                                                         <!-- Increment quantity button -->
                                                         <div class="input-group-append">
-                                                            <button class="increment-qty btn btn-sm border" data-item_id="{{ item.book.id }}" id="increment-qty_{{ item.book.id }}">
+                                                            <button class="increment-qty btn btn-sm border" data-item_id="{{ item.book.pk }}" id="increment-qty_{{ item.book.pk }}">
                                                                 <span><i class="fas fa-plus fa-sm"></i></span>
                                                             </button>
                                                         </div>
@@ -67,7 +67,7 @@
                                                 </div>
                                             </form>
                                             <a class="update-link link-dec-none"><small>Update</small></a>
-                                            <a class="remove-item float-end link-dec-none" id="remove_{{ item.book.id }}"><small>Remove</small></a>
+                                            <a class="remove-item float-end link-dec-none" id="remove_{{ item.book.pk }}"><small>Remove</small></a>
                                         </td>
                                         <td class="py-3">
                                             <p class="my-0">{{ item.book.price }}</p>
@@ -117,16 +117,16 @@
     })
 
     //Remove book and refresh page on click
-    $(".remove-item").click(function(e) {
+    $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
-        var bookId = $(this).attr('id').split("remove_")[1];
-        var url = "/cart/remove/${bookId}";
-        var data = {"csrfmiddlewaretoken": csrfToken}
+        var bookId = $(this).attr('id').split('remove_')[1];
+        var url = `/cart/remove/${bookId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
-        .done(function(e) {
-            location.reload();
-        });
+         .done(function() {
+             location.reload();
+         });
     })
 </script>
 {% endblock %}
