@@ -43,7 +43,7 @@
                                             <p class="my-0 small text-muted">ISBN: {{ item.book.isbn }}</p>
                                         </td>
                                         <td class="py-3">
-                                            <p class="my-0" id="price">{{ item.book.price }}</p>
+                                            <p class="my-0" id="price">€{{ item.book.price }}</p>
                                         </td>
                                         <td class="py-3 w-15">
                                             <form class="form update-qty" method="POST" action="{% url 'edit_cart' item.book.pk %}">
@@ -71,7 +71,7 @@
                                             <a class="remove-item float-end link-dec-none" id="remove_{{ item.book.pk }}"><small>Remove</small></a>
                                         </td>
                                         <td class="py-3">
-                                            <p class="my-0">{{ item.book.price | calculate_subtotal:item.quantity }}</p>
+                                            <p class="my-0">€{{ item.book.price | calculate_subtotal:item.quantity }}</p>
                                         </td>
                                     </tr>
                                 {% endfor %}
@@ -88,7 +88,7 @@
                                             <span class="icon"><i class="fas fa-chevron-left"></i></span>
                                             <span>Keep Shopping</span>
                                         </a>
-                                        <a href="#" class="btn btn-black btn-lg"><span>Checkout</span></a>
+                                        <a href="{% url 'checkout' %}" class="btn btn-black btn-lg"><span>Checkout</span></a>
                                     </td>
                                 </tr>
                             </table>

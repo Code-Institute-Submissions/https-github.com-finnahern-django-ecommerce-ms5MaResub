@@ -9,7 +9,8 @@ body {
 /* base.html */
 
 .header-container {
-    margin-top: 120px; /* Set header container height so the body appears below the header, not behind it. */
+    /* Set header container height so the body appears below the header, not behind it. */
+    margin-top: 120px; 
 }
 
 #nav-buttons{
@@ -96,11 +97,19 @@ body {
     cursor: pointer;
 }
 
+/* checkout.html */
+
+.textinput,
+#id_country {
+    margin-bottom: 10px;
+}
+
 /* Media queries -----------------*/
 
 @media (max-width: 992px){
     .header-container {
-        margin-top: 200px; /* Set header container height so the body appears below the header, not behind it. */
+        /* Set header container height so the body appears below the header, not behind it. */
+        margin-top: 200px; 
     }
 
     .logo-font {
