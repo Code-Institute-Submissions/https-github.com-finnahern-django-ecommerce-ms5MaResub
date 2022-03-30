@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container"></div>
+{% endblock %}
+
+{% block content %}
+    <div class="container h-100">
+        <div class="row">
+            <div class="col-lg-8 justify-content-center">
+                {% if form.errors %}
+                    <p>Your username and password didn't match. Please try again.</p>
+                {% else %}
+                    <p>Please use the following form to log in:</p>
+                    <p>Or, register for a new account <a href="#" class="link-dec-none">here</a></p>
+                {% endif %}
+                <div class="col-6">
+                    <form action="#" method="POST" id="login-form">
+                        {% csrf_token %}
+                        <fieldset>
+                            Username: {{ form.username | as_crispy_field }}
+                            Password: {{ form.password | as_crispy_field }}
+                        </fieldset>
+                        <div class="submit-button text-end mt-5 mb-2">
+                            <a href="#" class="btn btn-outline border">
+                                <span class="icon"><i class="fas fa-chevron-left"></i></span>
+                                <span class="font-weight-bold">Go Back</span>
+                            </a>
+                            <button id="submit-button" class="btn btn-black">
+                                <span class="font-weight-bold">Login</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
