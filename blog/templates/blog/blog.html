@@ -27,7 +27,11 @@
             <div class="col-12 mb-3">
                 <div class="card h-100 border-0">
                     <div class="card-body pb-0">
-                        <p class="mb-0"><strong>{{ post.title }}</strong></p>
+                        <p class="mb-0">
+                            <a class="link-dec-none" href="{{ post.get_absolute_url }}">
+                                <strong>{{ post.title }}</strong>
+                            </a>
+                        </p>
                         <p class="mb-0 small">{{ post.publish|naturaltime }}</p>
                         <p class="mb-0 small">by {{ post.author }}</p>
                         <p class="mt-1 large">{{ post.body|truncatewords:30 }}</p>
