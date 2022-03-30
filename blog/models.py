@@ -21,7 +21,7 @@ class Post(models.Model):
 
     def save(self, *args, **kwargs):
         """
-        Generate an order number if one hasn't been set already
+        Generate an slug and publish date if they haven't been set already
         """
         if not self.slug:
             self.slug = self.title.lower().replace(" ", "-")
@@ -37,4 +37,15 @@ class Post(models.Model):
                        args=[self.publish.year,
                              self.publish.month,
                              self.publish.day,
+                             self.publish.hour,
+                             self.publish.minute,
+                             self.slug])
+
+    def get_edit_url(self):
+        return reverse("edit_post",
+                       args=[self.publish.year,
+                             self.publish.month,
+                             self.publish.day,
+                             self.publish.hour,
+                             self.publish.minute,
                              self.slug])

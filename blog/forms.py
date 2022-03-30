@@ -10,3 +10,12 @@ class CreatePostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ["title", "body"]
+
+
+class EditPostForm(forms.ModelForm):
+    """
+    Form for the super user to edit existing blog posts.
+    """
+    class Meta:
+        model = Post
+        fields = ["title", "body"]

@@ -17,10 +17,10 @@
                             <span class="icon"><i class="fas fa-trash"></i></span>
                             <span class="font-weight-bold font-color-danger">Delete Post</span>
                         </button>
-                        <button id="edit-post-button" class="btn btn-outline-black border float-end">
+                        <a href="{{ post.get_edit_url }}" class="btn btn-outline border float-end" id="edit-post-button">
                             <span class="icon"><i class="fa-solid fa-pen-to-square"></i></span>
                             <span class="font-weight-bold">Edit Post</span>
-                        </button>
+                        </a>    
                     </div>
                 {% endif %}
                 <h2 class="logo-font mb-0">{{ post.title }}</h2>
