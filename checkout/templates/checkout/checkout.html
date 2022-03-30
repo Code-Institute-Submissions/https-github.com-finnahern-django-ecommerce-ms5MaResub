@@ -57,6 +57,10 @@
             </div>
             <!-- Checkout form -->
             <div class="col-12 col-lg-6">
+                <div class="d-none" id="payment-processing">
+                    <h1>Payment processing...</h1>
+                    <h3 class="text-muted">Please don't navigate away from this page.</h3>
+                </div>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset>
