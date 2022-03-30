@@ -11,6 +11,18 @@
         <div class="row">
             <div class="col">
                 <hr>
+                {% if request.user.is_superuser %}
+                    <div class="mt-auto" id="post-buttons">
+                        <button id="delete-post-button" class="btn btn-outline-black border float-end">
+                            <span class="icon"><i class="fas fa-trash"></i></span>
+                            <span class="font-weight-bold font-color-danger">Delete Post</span>
+                        </button>
+                        <button id="edit-post-button" class="btn btn-outline-black border float-end">
+                            <span class="icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                            <span class="font-weight-bold">Edit Post</span>
+                        </button>
+                    </div>
+                {% endif %}
                 <h2 class="logo-font mb-0">{{ post.title }}</h2>
                 <p class="mb-0 small">{{ post.publish }}</p>
                 <p class="mb-0 small">by {{ post.author }}</p>

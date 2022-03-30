@@ -19,6 +19,16 @@ class Post(models.Model):
     class Meta:
         ordering = ("-publish",)
 
+    def save(self, *args, **kwargs):
+        """
+        Generate an order number if one hasn't been set already
+        """
+        if not self.slug:
+            self.slug = self.title.lower().replace(" ", "-")
+        if not self.publish:
+            self.publish = timezone.now()
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.title
 
