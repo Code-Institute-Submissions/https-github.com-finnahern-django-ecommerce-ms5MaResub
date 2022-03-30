@@ -16,6 +16,8 @@ def all_products(request):
     # Initialise empty query set to be populated below
     queries = Book.objects.none()
 
+    # Search function to return a set of books based on the user's search criteria,
+    # whether it was a title, genre or name of an author.
     if request.GET:
         if "q" in request.GET:
             query = request.GET["q"]
