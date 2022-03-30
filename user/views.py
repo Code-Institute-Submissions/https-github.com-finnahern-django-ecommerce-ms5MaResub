@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from . forms import LoginForm, UserRegistrationForm
+from checkout.models import Order
+from django.db.models import Q
 
 
 def user_login(request):
@@ -57,3 +59,23 @@ def register(request):
     return render(request,
                 "user/register.html",
                 {"user_form": user_form})
+
+
+@login_required()
+def order_history(request):
+    """
+    Renders the user's order history
+    """
+
+    orders = Order.objects.all()
+    user_history = Order.objects.none()
+
+    query = Q(user__exact=request.user.username)
+    user_history = orders.filter(query)
+
+    template = "user/order_history.html"
+    context = {
+        "user_history": user_history
+    }
+
+    return render(request, template, context)

@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: 'Playfair Display', serif;
+    min-height: 100vh;
 }
 
 /* base.html */
@@ -54,6 +55,19 @@ body {
 }
 
 /* index.html */
+
+.background-image{
+    height: 100vh;
+    background-image: url("https://cornerbooks-ms5.s3.eu-west-1.amazonaws.com/media/index_background.png");
+    filter: grayscale(100%);
+    display: flex;
+    z-index: -1;
+}
+
+.white-background {
+    background-color: #fff;
+    opacity: 0.85;
+}
 
 #main-links {
     margin-top: 25%;
@@ -146,6 +160,10 @@ label {
     .header-container {
         /* Set header container height so the body appears below the header, not behind it. */
         margin-top: 200px; 
+    }
+
+    #main-links {
+        margin-top: 50%;
     }
 
     .logo-font {

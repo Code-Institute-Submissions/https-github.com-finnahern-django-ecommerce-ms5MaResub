@@ -7,6 +7,7 @@ from django.conf import settings
 from django_countries.fields import CountryField
 
 from shop.models import Book
+from django.contrib.auth.models import User
 
 
 class Order(models.Model):
@@ -27,6 +28,7 @@ class Order(models.Model):
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     original_cart = models.TextField(null=False, blank=False, default="")
     stripe_pid = models.CharField(max_length=254, null=False, blank=False, default="")
+    user = models.CharField(max_length=150, null=True, blank=True)
 
     def _generate_order_number(self):
         """

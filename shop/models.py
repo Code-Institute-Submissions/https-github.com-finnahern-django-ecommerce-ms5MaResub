@@ -20,7 +20,7 @@ class Book(models.Model):
     """
     Data model for books that will populate the store.
     """
-    genre = models.ForeignKey('Genre', null=True, blank=True, on_delete=models.SET_NULL)
+    genre = models.ForeignKey("Genre", null=True, blank=True, on_delete=models.SET_NULL)
     isbn = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     author = models.CharField(max_length=254, default="")

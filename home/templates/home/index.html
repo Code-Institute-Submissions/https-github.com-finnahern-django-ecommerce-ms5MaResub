@@ -2,20 +2,27 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container"></div>
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row" id="main-links">
-            <div class="col-12 col-lg-6 py-5">
-                <p>Browse our online store here:</p>
-                <a href="{% url 'shop' %}" class="shop-button btn btn-lg rounded-0 border text-uppercase mx-5 py-3">Shop</a>
-            </div>
-            <div class="col-12 col-lg-6 py-5">
-                <p>See all the latest news and updates in our blog:</p>
-                <a href="{% url 'blog' %}" class="shop-button btn btn-lg rounded-0 border text-uppercase mx-5 py-3">Blog</a>
+    <div class="background-image">
+        <div class="container h-100">
+            <div class="row" id="main-links">
+                <div class="index-link col-6 col-lg-4 offset-2 p-2">
+                    <div class="white-background p-3">
+                        <p><strong>Browse our online store here:</strong></p>
+                        <a href="{% url 'shop' %}" class="shop-button btn btn-lg rounded-0 border text-uppercase mx-5 py-3"><strong>Shop</strong></a>
+                    </div>
+                    
+                </div>
+                <div class="index-link col-6 col-lg-4 offset-2 p-2">
+                    <div class="white-background p-3">
+                        <p><strong>See latest news and updates:</strong></p>
+                        <a href="{% url 'blog' %}" class="shop-button btn btn-lg rounded-0 border text-uppercase mx-5 py-3"><strong>Blog</strong></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
 {% endblock %}
