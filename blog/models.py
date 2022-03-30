@@ -19,33 +19,23 @@ class Post(models.Model):
     class Meta:
         ordering = ("-publish",)
 
-    def save(self, *args, **kwargs):
-        """
-        Generate an slug and publish date if they haven't been set already
-        """
-        if not self.slug:
-            self.slug = self.title.lower().replace(" ", "-")
-        if not self.publish:
-            self.publish = timezone.now()
-        super().save(*args, **kwargs)
-
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
         return reverse("blog_post",
-                       args=[self.publish.year,
-                             self.publish.month,
-                             self.publish.day,
-                             self.publish.hour,
-                             self.publish.minute,
-                             self.slug])
+                       args=[self.publish.year, self.publish.month,
+                             self.publish.day, self.publish.hour,
+                             self.publish.minute, self.slug])
 
     def get_edit_url(self):
         return reverse("edit_post",
-                       args=[self.publish.year,
-                             self.publish.month,
-                             self.publish.day,
-                             self.publish.hour,
-                             self.publish.minute,
-                             self.slug])
+                       args=[self.publish.year, self.publish.month,
+                             self.publish.day, self.publish.hour,
+                             self.publish.minute, self.slug])
+
+    def get_delete_url(self):
+        return reverse("delete_post",
+                       args=[self.publish.year, self.publish.month,
+                             self.publish.day, self.publish.hour,
+                             self.publish.minute, self.slug])

@@ -13,10 +13,10 @@
                 <hr>
                 {% if request.user.is_superuser %}
                     <div class="mt-auto" id="post-buttons">
-                        <button id="delete-post-button" class="btn btn-outline-black border float-end">
+                        <a href="{{ post.get_delete_url }}" class="btn btn-outline border float-end" id="delete-post-button">
                             <span class="icon"><i class="fas fa-trash"></i></span>
                             <span class="font-weight-bold font-color-danger">Delete Post</span>
-                        </button>
+                        </a>
                         <a href="{{ post.get_edit_url }}" class="btn btn-outline border float-end" id="edit-post-button">
                             <span class="icon"><i class="fa-solid fa-pen-to-square"></i></span>
                             <span class="font-weight-bold">Edit Post</span>

@@ -14,6 +14,8 @@ As a customer I want to be able to:
 - Pay for my order using my bank card, with as few barriers to this transaction as possible.
 - Receive a visual cue confirming my order, so I know it's been processed correctly.
 - View detailed information about each book in the store, to help decide if it's right for me.
+- Browse the store's blog for news and updates.
+- View my order history to see what I purchased previously and when.
 
 ### Store owner
 
@@ -22,7 +24,8 @@ As the store owner I want to be able to:
 - Add new products to the database and have them automatically display on the website so customers can purchase them.
 - Edit details of existing products, such as price if I want to offer a discount.
 - Hide products from display, so I can prevent customers from viewing and buying them without deleting their database entry.
-- View and edit customer orders so I can deal with customer support queries and solve mistakes. 
+- View and edit customer orders so I can deal with customer support queries and solve mistakes.
+- View, create, edit and delete blog posts from within the website itself.
 
 Welcome finnahern,
 
