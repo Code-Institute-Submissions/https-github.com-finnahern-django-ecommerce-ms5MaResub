@@ -29,3 +29,31 @@ def user_login(request):
     template = "user/login.html"
     context = {"form": form}
     return render(request, template, context)
+
+
+def register(request):
+    """
+    Renders the registration page to create new user accounts.
+    """
+    if request.method == "POST":
+        user_form = UserRegistrationForm(request.POST)
+        if user_form.is_valid():
+            # Create a new user object but don't save it yet
+            new_user = user_form.save(commit=False)
+            # Set the chosen password
+            new_user.set_password(
+                user_form.cleaned_data["password"])
+            # Save the user object
+            new_user.save()
+            # And log in the
+            user = authenticate(request,
+                                username=user_form.cleaned_data["username"],
+                                password=user_form.cleaned_data["password"])
+            login(request, user)
+
+            return redirect("/")
+    else:
+        user_form = UserRegistrationForm()
+    return render(request,
+                "user/register.html",
+                {"user_form": user_form})
