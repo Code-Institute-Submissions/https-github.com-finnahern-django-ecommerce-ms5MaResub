@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
-from . forms import LoginForm, UserRegistrationForm
-from checkout.models import Order
 from django.db.models import Q
+
+from checkout.models import Order
+from . forms import LoginForm, UserRegistrationForm, NewsletterForm
 
 
 def user_login(request):
@@ -57,8 +58,8 @@ def register(request):
     else:
         user_form = UserRegistrationForm()
     return render(request,
-                "user/register.html",
-                {"user_form": user_form})
+                  "user/register.html",
+                  {"user_form": user_form})
 
 
 @login_required()
@@ -77,5 +78,16 @@ def order_history(request):
     context = {
         "user_history": user_history
     }
+
+    return render(request, template, context)
+
+
+def newsletter_signup(request):
+    """
+    Renders the newsletter sign up form
+    """
+
+    template = "user/newsletter.html"
+    context = {}
 
     return render(request, template, context)

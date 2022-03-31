@@ -1,6 +1,6 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Corner Bookshop
 
-https://www.kaggle.com/yamqwe/bulk-bookstore-dataset
+[Link to deployed site.](https://cornerbooks-ms5.herokuapp.com/)
 
 ## User stories
 
@@ -15,11 +15,11 @@ As a customer I want to be able to:
 - Receive a visual cue confirming my order, so I know it's been processed correctly.
 - View detailed information about each book in the store, to help decide if it's right for me.
 - Browse the store's blog for news and updates.
-- View my order history to see what I purchased previously and when.
+- View my order history to see what I purchased previously and when and how much I paid.
 
 ### Store owner
 
-As the store owner I want to be able to:
+As the store owner I want to: be able to:
 
 - Add new products to the database and have them automatically display on the website so customers can purchase them.
 - Edit details of existing products, such as price if I want to offer a discount.
