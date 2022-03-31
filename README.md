@@ -113,6 +113,8 @@ I have manually tested each feature of the site throughout development as well a
 
 One notable bug I fixed during development was in the search function, in the views of the shop app. An early version of the code was simply looking to see if the names of the genres were included in the search criteria string and adding all the books belonging to that genre to the query set if they were. This meant that searching "nonfiction", "non-fiction" or "non fiction" would return all the books in the non-fiction genre **as well** as all the books in the fiction genre as "fiction" is included in all of those strings.
 
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/genresearchbug.PNG" width="70%" height="760%"/>
+
 ### Known issues
 
 Despite extensive testing there are a number of bugs and issues that persist in the code that I either couldn't, or didn't have the time to fix.
