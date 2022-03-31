@@ -97,7 +97,7 @@ The order_history function in the view filters all instances of the Order model 
 ## Improvements
 There are a number of ideas for features I would have liked to include but couldn't for a variety of reasons not least of which was the time limit. I've listed some of these below.
 
-- Add defensive programming during the checkout process to prevent edge cases where the user deliberately or accidentally navigates away from the checkout page before the payment has fully authenticated, resulting in the card being charged but no order object being created.
+- Add defensive programming during the checkout process to prevent edge cases where the user deliberately or accidentally navigates away from the checkout page before the payment has fully authenticated, resulting in the card being charged but no order object being created. This can be accomplished by utilising Stripe's webhooks.
 - Create a more in depth search function. I am quite proud of how the search function turned out but there are always improvement that can be made. For instance there are a few books with two authors in the database and it doesn't handle those well.
 - Add pagination on the store, blog and order history pages would help make those pages easy to navigate as well as cut down on image hosting costs at scale.
 - Create clearer visual confirmation that a book has been added to the user's cart. Right now the only confirmation is that the cart total amount in the nav bar increases but this is easy to miss. I would have liked to have used Bootstrap's toasts to provide a notification to confirm when the cart is updated.
@@ -109,7 +109,7 @@ There are a number of ideas for features I would have liked to include but could
 
 ## Manual testing
 
-I have manually tested each feature of the site throughout development as well as a final pass after the code was completed. Full details of which can be found [here]().
+I have manually tested each feature of the site throughout development as well as a final pass after the code was completed. Full details of which can be found [here](https://github.com/finnahern/django-ecommerce-ms5/blob/main/doc_resources/TEST.md).
 
 ## Validation
 
@@ -127,9 +127,13 @@ Despite extensive testing there are a number of bugs and issues that persist in 
 - Blog posts' urls are generated using the time they were created and their slug, which is derived from the post title. This means that if 2 posts with the same title are created in the same minute as each other they will have identical urls and neither can be accessed until 1 is deleted via the admin back end. Originally the url only used the date of creation meaning this was a much bigger problem. I opted to include the hour and minute of creation in the url and presume that a store owner is very unlikely to make 2 blog posts in the same minute, never mind 2 with the same title.
 - Logged in users can still access the registration form and create a new account without logging out via the URL.
 - The order history page is populated via the "user" field of the Order model. This is just a CharField populated by the username of the logged in user when the order is place. This means that if a user account is deleted, and then another created with the same username, the new account will "inherit" the order history of the old account. This would present serious data protection concerns in a real-world scenario.
+
+The following issues were discovered during manual testing, but too late to be able to fix before the submission deadline.
+
 - Submitting the search bar with empty criteria is the same as no criteria, but searching for " " returns a TypeError as the logic can't account for a non-conditional statement. This can probably be resolved with an if statement checking that the criteria isn't just whitespace and giving the user an error message if they try.
 - If the quantity field on the product_detail page is empty and you click "Add to Cart" the site crashes and returns a ValueError as the add_to_cart function is expecting an int. Some custom form validation is needed to prevent unexpected values being submitted.
 - Clicking update in the cart with a non-numeral character in the quantity field throws a ValueError as the update button is an anchor element, not a submit button. As above, more validation is needed on the minor forms throughout the site.
+- Submitting a checkout form with a valid card, but " " in every required field crashes the site with an error as the intent is referenced before it's assigned but Stripe still charges the test card succesfully. This has problematic implications for a user earnestly submitting invalid data by mistake but would probably be solved with properly implemented Stripe webhooks and more form validation.
 
 # Deployment
 
