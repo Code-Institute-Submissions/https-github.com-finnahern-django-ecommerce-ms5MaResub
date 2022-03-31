@@ -80,8 +80,7 @@ Once the cart is checked out successfully, a new Order object is instantiated an
 
 ## Blog
 
-<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/
-blog.PNG" width="60%" height="60%"/>
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/blog.PNG" width="60%" height="60%"/>
 
 The blog app features the Post data model, which includes full CRUD functionality, only accessible by the admin superuser account. 
 
@@ -104,15 +103,20 @@ There are a number of ideas for features I would have liked to include but could
 - Create clearer visual confirmation that a book has been added to the user's cart. Right now the only confirmation is that the cart total amount in the nav bar increases but this is easy to miss. I would have liked to have used Bootstrap's toasts to provide a notification to confirm when the cart is updated.
 - Provide a form for user's to change their password.
 - Add more functionality associated with having a user account such as the ability to save delivery information to the account to make future orders easier and to comment on blog posts.
+- Collect email addresses from the newsletter form and use a service like [Mailchimp](https://mailchimp.com/) to create a mailing list.
 
 # Testing
 
 I have manually tested each feature of the site throughout development as well as a final pass after the code was completed. Full details of which can be found [here]().
 
+### Bugs fixed
+
+One notable bug I fixed during development was in the search function, in the views of the shop app. An early version of the code was simply looking to see if the names of the genres were included in the search criteria string and adding all the books belonging to that genre to the query set if they were. This meant that searching "nonfiction", "non-fiction" or "non fiction" would return all the books in the non-fiction genre **as well** as all the books in the fiction genre as "fiction" is included in all of those strings.
+
 ### Known issues
 
 Despite extensive testing there are a number of bugs and issues that persist in the code that I either couldn't, or didn't have the time to fix.
-- Blog posts' urls are generated using the time they were create and their slug, which is derived from the post title. This means that if 2 posts with the same title are created in the same minute as each other they will have identical urls and neither can be accessed until 1 is deleted via the admin back end. Originally the url only used the date of creation meaning this was a much bigger problem. I opted to include the hour and minute of creation in the url and presume that a store owner is very unlikely to make 2 blog posts in the same minute, never mind 2 with the same title.
+- Blog posts' urls are generated using the time they were created and their slug, which is derived from the post title. This means that if 2 posts with the same title are created in the same minute as each other they will have identical urls and neither can be accessed until 1 is deleted via the admin back end. Originally the url only used the date of creation meaning this was a much bigger problem. I opted to include the hour and minute of creation in the url and presume that a store owner is very unlikely to make 2 blog posts in the same minute, never mind 2 with the same title.
 - Logged in users can still access the registration form and create a new account without logging out via the URL.
 - The order history page is populated via the "user" field of the Order model. This is just a CharField populated by the username of the logged in user when the order is place. This means that if a user account is deleted, and then another created with the same username, the new account will "inherit" the order history of the old account. This would present serious data protection concerns in a real-world scenario.
 
