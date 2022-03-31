@@ -107,20 +107,29 @@ There are a number of ideas for features I would have liked to include but could
 
 # Testing
 
+## Manual testing
+
 I have manually tested each feature of the site throughout development as well as a final pass after the code was completed. Full details of which can be found [here]().
 
-### Bugs fixed
+## Validation
+
+All Python code in the project has succesfully passed [PEP8 validation](http://pep8online.com/) without any errors that would affect the functioning of the code. Most files passed without any problems at all and those that didn't were mostly limited to "line too long" errors.
+
+## Bugs fixed
 
 One notable bug I fixed during development was in the search function, in the views of the shop app. An early version of the code was simply looking to see if the names of the genres were included in the search criteria string and adding all the books belonging to that genre to the query set if they were. This meant that searching "nonfiction", "non-fiction" or "non fiction" would return all the books in the non-fiction genre **as well** as all the books in the fiction genre as "fiction" is included in all of those strings.
 
 <img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/genresearchbug.PNG" width="70%" height="760%"/>
 
-### Known issues
+## Known issues
 
 Despite extensive testing there are a number of bugs and issues that persist in the code that I either couldn't, or didn't have the time to fix.
 - Blog posts' urls are generated using the time they were created and their slug, which is derived from the post title. This means that if 2 posts with the same title are created in the same minute as each other they will have identical urls and neither can be accessed until 1 is deleted via the admin back end. Originally the url only used the date of creation meaning this was a much bigger problem. I opted to include the hour and minute of creation in the url and presume that a store owner is very unlikely to make 2 blog posts in the same minute, never mind 2 with the same title.
 - Logged in users can still access the registration form and create a new account without logging out via the URL.
 - The order history page is populated via the "user" field of the Order model. This is just a CharField populated by the username of the logged in user when the order is place. This means that if a user account is deleted, and then another created with the same username, the new account will "inherit" the order history of the old account. This would present serious data protection concerns in a real-world scenario.
+- Submitting the search bar with empty criteria is the same as no criteria, but searching for " " returns a TypeError as the logic can't account for a non-conditional statement. This can probably be resolved with an if statement checking that the criteria isn't just whitespace and giving the user an error message if they try.
+- If the quantity field on the product_detail page is empty and you click "Add to Cart" the site crashes and returns a ValueError as the add_to_cart function is expecting an int. Some custom form validation is needed to prevent unexpected values being submitted.
+- Clicking update in the cart with a non-numeral character in the quantity field throws a ValueError as the update button is an anchor element, not a submit button. As above, more validation is needed on the minor forms throughout the site.
 
 # Deployment
 

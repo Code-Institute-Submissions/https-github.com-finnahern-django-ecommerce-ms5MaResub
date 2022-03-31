@@ -69,7 +69,11 @@ def checkout(request):
                 )
                 order_line_item.save()
             request.session["save_info"] = "save-info" in request.POST
-            return redirect(reverse("checkout_success", args=[order.order_number]))
+            return redirect(
+                reverse(
+                    "checkout_success",
+                    args=[
+                        order.order_number]))
         else:
             messages.error(request, "There was an error with your form. \
                 Please double check your information.")
@@ -77,7 +81,8 @@ def checkout(request):
     else:
         cart = request.session.get("cart", {})
         if not cart:
-            messages.error(request, "There's nothing in your cart! Redirecting...")
+            messages.error(
+                request, "There's nothing in your cart! Redirecting...")
             return redirect(reverse("shop"))
 
         current_cart = cart_contents(request)
@@ -92,7 +97,9 @@ def checkout(request):
         order_form = OrderForm()
 
     if not stripe_public_key:
-        messages.warning(request, "Stripe public key is missing, check that it's set in the enviornment!")
+        messages.warning(
+            request,
+            "Stripe public key is missing, check that it's set in the enviornment!")
 
     template = "checkout/checkout.html"
     context = {

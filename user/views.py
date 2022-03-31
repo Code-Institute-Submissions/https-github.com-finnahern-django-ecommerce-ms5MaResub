@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
 from checkout.models import Order
-from . forms import LoginForm, UserRegistrationForm, NewsletterForm
+from . forms import LoginForm, UserRegistrationForm
 
 
 def user_login(request):
