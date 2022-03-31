@@ -15,7 +15,11 @@
             </div>
             <div class="col-12 col-lg-7">
                 {% for order in user_history %}
-                    <p class="mb-0"><strong>Order Number: {{ order.order_number}}</strong></p>
+                    <p class="mb-0">
+                        <a href="{% url 'checkout_success' order.order_number %}" class="link-dec-none">
+                            <strong>Order Number: {{ order.order_number}}</strong>
+                        </a>
+                    </p>
                     <p class="mb-2 small">{{ order.date}}</p>
                     {% for item in order.lineitems.all %}
                         <p class="m-0">{{ item.book.name }}
