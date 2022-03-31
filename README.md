@@ -4,7 +4,7 @@
 
 A project using Django to create a commercial grade ecommerce website. The site uses a Postgres database to handle a number of bespoke data models to dynamically serve content and respond to user actions.
 
-I believe this project serves a strong base and many of its functions can be repurposed into future ecommerce applcations and other projects. Unfortunately there are a number of features I would have liked to include for a more complete user experience that were not feasible due to time constraints. These are detailed in [improvements](###Improvements) section below.
+I believe this project serves a strong base and many of its functions can be repurposed into future ecommerce applcations and other projects. Unfortunately there are a number of features I would have liked to include for a more complete user experience that were not feasible due to time constraints. These are detailed in [improvements](#Improvements) section below.
 
 The deployed website can be found at the link above. The credentials for the admin superuser have been provided with the project submission. If you wish to test account functionality, regular user accounts can be created using the site's registration form accessible via the main nav bar.
 
@@ -12,7 +12,7 @@ The deployed website can be found at the link above. The credentials for the adm
 Given the brief to create an ecommerce site, the design is focused on making the user experience simple and accessible. The process of browsing the store, adding products to the cart and checking out should be as seamless as possible. Details about each book are easily visible from the main store page, or only a click away to get more information. The main nav bar from the base template is fixed to the top of the view window allowing easy access to every part of the site.
 
 ### Wireframes
-Before writing a single line of code, I mocked up some wireframes using [Invision](https://www.invisionapp.com/), an online took I found. I ended up sticking quite closely to this early vision. The wire frames can be found [here](LINK)
+Before writing a single line of code, I mocked up some wireframes using [Invision](https://www.invisionapp.com/), an online took I found. I ended up sticking quite closely to this early vision. The wire frames can be found [here](https://github.com/finnahern/django-ecommerce-ms5/tree/main/doc_resources/wireframes)
 
 ### User stories
 
@@ -49,13 +49,13 @@ The package has been broken up into six distinct apps, the features of each of w
 
 ## Home
 
-<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/home.PNG" width="50%" height="50%"/>
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/home.PNG" width="50%" height="50%"/>
 
 The home app is the simplest, but it was my starting point upon which I built the rest of the project. It renders the index.html template, which displays a photograph by Horst Friedrichs of the Shakespeare & Co bookshop in Paris and invites the user to browse the shop or the blog, the two main sections of the website.
 
 ## Shop
 
-<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/shop.PNG" width="50%" height="50%"/>
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/shop.PNG" width="50%" height="50%"/>
 
 Selling books is the main purpose of the website, so the shop app is the most important. From here the user can see the complete collection of books available from the database, find what they're looking for with the powerful search bar and view each book's product_detail page to add it to their cart.
 
@@ -66,13 +66,13 @@ Some features of the shop app include:
 
 ## Cart
 
-<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/cart.PNG" width="60%" height="60%"/>
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/cart.PNG" width="50%" height="50%"/>
 
 What use is a shop if you can't buy anything? The cart app allows the user to add books to their cart from the book's product_detail page. The cart link in the nav bar then updates in real time with the session's current total. From the cart page itself the user can remove books from the cart or edit the quantity they wish to purchase.
 
 ## Checkout
 
-<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/checkout.PNG" width="60%" height="60%"/>
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/checkout.PNG" width="60%" height="60%"/>
 
 The checkout app includes the Order and OrderLineItem data models allowing the website to track purchases made and, in a real world scenario, fulfill those orders. The checkout also features Stripe integration which can be seen in the card element at the bottom of the checkout form. In order to test the checkout process, please use Stripe's test card numbers: 4242 4242 4242 4242 or 4000 0025 0000 3155 if you wish to test a payment that fails to authenticate. The expiry date, CVC and postcode for both cards are 04/24 242 424242 respectively.
 
@@ -80,7 +80,8 @@ Once the cart is checked out successfully, a new Order object is instantiated an
 
 ## Blog
 
-<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/blog.PNG" width="60%" height="60%"/>
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/
+blog.PNG" width="60%" height="60%"/>
 
 The blog app features the Post data model, which includes full CRUD functionality, only accessible by the admin superuser account. 
 
@@ -92,7 +93,7 @@ The user app governs all the functions related to user accounts: logging in and 
 
 The order_history function in the view filters all instances of the Order model to those whose user field matches the username of the currently logged in account and a for loop in the template displays a list of these orders. Each order number can be clicked on to return to that order's confirmation page if the user wishes to confirm any details of their order.
 
-<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/order_history.PNG" width="60%" height="60%"/>
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/order_history.PNG" width="60%" height="60%"/>
 
 ## Improvements
 There are a number of ideas for features I would have liked to include but couldn't for a variety of reasons not least of which was the time limit. I've listed some of these below.
