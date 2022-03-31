@@ -2,7 +2,21 @@
 
 [Link to deployed site.](https://cornerbooks-ms5.herokuapp.com/)
 
-## User stories
+A project using Django to create a commercial grade ecommerce website. The site uses a Postgres database to handle a number of bespoke data models to dynamically serve content and respond to user actions.
+
+I believe this project serves a strong base and many of its functions can be repurposed into future ecommerce applcations and other projects. Unfortunately there are a number of features I would have liked to include for a more complete user experience that were not feasible due to time constraints. These are detailed in [improvements](###Improvements) section below.
+
+The deployed website can be found at the link above. The credentials for the admin superuser have been provided with the project submission. If you wish to test account functionality, regular user accounts can be created using the site's registration form accessible via the main nav bar.
+
+# UX/Design
+Given the brief to create an ecommerce site, the design is focused on making the user experience simple and accessible. The process of browsing the store, adding products to the cart and checking out should be as seamless as possible. Details about each book are easily visible from the main store page, or only a click away to get more information. The main nav bar from the base template is fixed to the top of the view window allowing easy access to every part of the site.
+
+### Wireframes
+Before writing a single line of code, I mocked up some wireframes using [Invision](https://www.invisionapp.com/), an online took I found. I ended up sticking quite closely to this early vision. The wire frames can be found [here](LINK)
+
+### User stories
+
+Along with designing a wireframe mockup of the site I wrote a set of user stories at the onset of the project to get an idea of the functionality the site would need. I used Github's built in [project board](https://github.com/finnahern/django-ecommerce-ms5/projects/1) to track my progress on achieving these goals, most of which can be seen in the final product although some had to be shelved due to time constraints. I've included the original user stories below.
 
 ### Customer
 
@@ -19,7 +33,7 @@ As a customer I want to be able to:
 
 ### Store owner
 
-As the store owner I want to: be able to:
+As the store owner I want to be able to:
 
 - Add new products to the database and have them automatically display on the website so customers can purchase them.
 - Edit details of existing products, such as price if I want to offer a discount.
@@ -27,109 +41,133 @@ As the store owner I want to: be able to:
 - View and edit customer orders so I can deal with customer support queries and solve mistakes.
 - View, create, edit and delete blog posts from within the website itself.
 
-Welcome finnahern,
+# Features
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The first thing that a new user's eye will be drawn to when they arrive at the site is the header and main nav bar, featured on every page of the site. The header includes the shop's logo which links back to the home page, a search bar allowing users to look up book titles, authors or genres and 4 buttons on the nav bar leading to the main sections of the site: the shop, the blog, the user options, and the shopping cart.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The package has been broken up into six distinct apps, the features of each of which I've detailed below.
 
-## Gitpod Reminders
+## Home
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/home.PNG" width="50%" height="50%"/>
 
-`python3 -m http.server`
+The home app is the simplest, but it was my starting point upon which I built the rest of the project. It renders the index.html template, which displays a photograph by Horst Friedrichs of the Shakespeare & Co bookshop in Paris and invites the user to browse the shop or the blog, the two main sections of the website.
 
-A blue button should appear to click: _Make Public_,
+## Shop
 
-Another blue button should appear to click: _Open Browser_.
+<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/shop.PNG" width="50%" height="50%"/>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Selling books is the main purpose of the website, so the shop app is the most important. From here the user can see the complete collection of books available from the database, find what they're looking for with the powerful search bar and view each book's product_detail page to add it to their cart.
 
-A blue button should appear to click: _Make Public_,
+Some features of the shop app include:
 
-Another blue button should appear to click: _Open Browser_.
+- Data models for each book as well as 5 genres, which are included as foreign keys of the book objects.
+- A search function in the all_products view which allows the user to enter in a title, author name or genre, or any combination of the three, as search criteria and for the set of books displayed to the user to adapt to this criteria. For example, entering "Truman Capote crime" into the search bar will display both books by Capote in the database as well as every book in the crime genre.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Cart
 
-To log into the Heroku toolbelt CLI:
+<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/cart.PNG" width="60%" height="60%"/>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+What use is a shop if you can't buy anything? The cart app allows the user to add books to their cart from the book's product_detail page. The cart link in the nav bar then updates in real time with the session's current total. From the cart page itself the user can remove books from the cart or edit the quantity they wish to purchase.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Checkout
 
-------
+<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/checkout.PNG" width="60%" height="60%"/>
 
-## Release History
+The checkout app includes the Order and OrderLineItem data models allowing the website to track purchases made and, in a real world scenario, fulfill those orders. The checkout also features Stripe integration which can be seen in the card element at the bottom of the checkout form. In order to test the checkout process, please use Stripe's test card numbers: 4242 4242 4242 4242 or 4000 0025 0000 3155 if you wish to test a payment that fails to authenticate. The expiry date, CVC and postcode for both cards are 04/24 242 424242 respectively.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Once the cart is checked out successfully, a new Order object is instantiated and saved to the database and the user is brought to the order success page showing them a summary of their order. If the user is logged in, this page can be accessed again later via their order history.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Blog
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/blog.PNG" width="60%" height="60%"/>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The blog app features the Post data model, which includes full CRUD functionality, only accessible by the admin superuser account. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Individual blog posts are displayed as a list in the blog.html order in descending order from the newest. From here users can click on a post's title to view it in detail and read the full post and the admin superuser can acess the Add Post button which leads to the form to create a new blog post. Each post has it's own page with a url dynamically created using a combination of the post's title and its creation time. From the blog_post page, the admin can also edit and delete the existing posts.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## User
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The user app governs all the functions related to user accounts: logging in and out, registering new accounts and viewing the current account's order history.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+The order_history function in the view filters all instances of the Order model to those whose user field matches the username of the currently logged in account and a for loop in the template displays a list of these orders. Each order number can be clicked on to return to that order's confirmation page if the user wishes to confirm any details of their order.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<img src="/workspace/django-ecommerce-ms5/doc_resources/screenshots/order_history.PNG" width="60%" height="60%"/>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Improvements
+There are a number of ideas for features I would have liked to include but couldn't for a variety of reasons not least of which was the time limit. I've listed some of these below.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Add defensive programming during the checkout process to prevent edge cases where the user deliberately or accidentally navigates away from the checkout page before the payment has fully authenticated, resulting in the card being charged but no order object being created.
+- Create a more in depth search function. I am quite proud of how the search function turned out but there are always improvement that can be made. For instance there are a few books with two authors in the database and it doesn't handle those well.
+- Add pagination on the store, blog and order history pages would help make those pages easy to navigate as well as cut down on image hosting costs at scale.
+- Create clearer visual confirmation that a book has been added to the user's cart. Right now the only confirmation is that the cart total amount in the nav bar increases but this is easy to miss. I would have liked to have used Bootstrap's toasts to provide a notification to confirm when the cart is updated.
+- Provide a form for user's to change their password.
+- Add more functionality associated with having a user account such as the ability to save delivery information to the account to make future orders easier and to comment on blog posts.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Testing
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+I have manually tested each feature of the site throughout development as well as a final pass after the code was completed. Full details of which can be found [here]().
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Known issues
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Despite extensive testing there are a number of bugs and issues that persist in the code that I either couldn't, or didn't have the time to fix.
+- Blog posts' urls are generated using the time they were create and their slug, which is derived from the post title. This means that if 2 posts with the same title are created in the same minute as each other they will have identical urls and neither can be accessed until 1 is deleted via the admin back end. Originally the url only used the date of creation meaning this was a much bigger problem. I opted to include the hour and minute of creation in the url and presume that a store owner is very unlikely to make 2 blog posts in the same minute, never mind 2 with the same title.
+- Logged in users can still access the registration form and create a new account without logging out via the URL.
+- The order history page is populated via the "user" field of the Order model. This is just a CharField populated by the username of the logged in user when the order is place. This means that if a user account is deleted, and then another created with the same username, the new account will "inherit" the order history of the old account. This would present serious data protection concerns in a real-world scenario.
 
-------
+# Deployment
 
-## FAQ about the uptime script
+The project was deployed using Heroku with a PostgreSQL database and using Amazon Web Services to host static and media files.
 
-**Why have you added this script?**
+### Steps for deployment
+- Create a new Heroku app
+- Install the Heroku Postgres Add-on
+- Ensure Config Vars, such as DATABASE_URL and SECRET_KEY are configured correctly in setting.py
+- Link the Heroku app to the Github repository
+- Click deploy
+- Set up a new AWS bucket and configure settings.py to use it as the static and media urls.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+# Credits
 
-**How will this affect me?**
+## Acknowledgements
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Spencer Barriball for his feedback and advice and recommending invaluable resources
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+David Malone and Colm Tang for their help and advice.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Technology used
+- [Django 4.0](https://docs.djangoproject.com/en/4.0/)
+- [Python](https://www.python.org/)
+- [Docker](https://www.docker.com/)
+- HTML
+- CSS
+- Javascript
+- [PostgreSQL](https://www.postgresql.org/) - Database used to store data models
+- [Gunicorn](https://gunicorn.org/)
+- [Git](https://git-scm.com/) - Version control.
+- [Github](https://github.com/) - Used to host repository and live site.
+- [Gitpod IDE](https://gitpod.io/) - Development enviornment used to build site.
 
-**So….?**
+## Frameworks
+- [Bootstrap](https://getbootstrap.com/) - CSS Framework used to format most of the elements in the site.
+- [JQuery](https://jqueryui.com/) - Javascript library
+- [Font Awesome](https://fontawesome.com/) - Resource for icons used throughout the site.
+- [Django-allauth](https://www.intenct.nl/projects/django-allauth/)
+- [Django-crispy-forms](https://github.com/django-crispy-forms/django-crispy-forms)
+- [Django-humanize](https://docs.djangoproject.com/en/4.0/ref/contrib/humanize/)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Third party services
+- [Heroku](https://www.heroku.com/) - Cloud service hosting the deployed site.
+- [Amazon Web Services](https://aws.amazon.com/) - Cloud service hosting static and media files.
+- [Pep8 validator](http://pep8online.com/) - Used to validate code and check for errors.
 
-**Can I opt out?**
+## Resources
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- [Django 3 By Example - Third Edition by Antonio Melé](https://www.packtpub.com/product/django-3-by-example-third-edition/9781838981952)
+- [Django 4.0 Documentation](https://docs.djangoproject.com/en/4.0/)
+- [W3Schools](https://www.w3schools.com/)
+- [Stackoverflow.com](https://stackoverflow.com/)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Image credits
+- [Shakespeare & Co., Paris by Horst Friedrichs](https://horstfriedrichs.com/shelf-portraits)
+- All book cover images are property of their respective publisher.
