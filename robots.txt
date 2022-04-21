@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /user/
+Sitemap: https://cornerbooks-ms5.herokuapp.com/sitemap.xml
