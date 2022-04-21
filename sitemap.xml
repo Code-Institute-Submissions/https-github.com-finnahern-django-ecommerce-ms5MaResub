@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/blog/</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/user/register/</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/user/login/</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/cart/</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/1</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/3</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/15</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/29</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/2</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/4</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/5</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/6</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/7</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/8</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/9</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/10</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/11</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/12</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/13</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/14</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/16</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/17</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/18</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/19</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/20</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/21</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/22</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/23</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/24</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/25</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/26</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/27</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/28</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/30</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/31</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/32</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/33</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/34</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/35</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/36</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/37</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/38</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/39</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/40</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/41</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/42</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/43</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/44</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/45</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/46</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/47</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/48</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/49</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/50</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/blog/2022/3/30/12/2/test-post-2/</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/blog/2022/3/30/11/11/test-post/</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Sylvia%20Nasar</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=biography</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Martin%20Gilbert</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Sylvia%20Plath</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=classics</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Jon%20Krakauer</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=crime</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Zora%20Neale%20Hurston</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Sonia%20Nazario</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Hayden%20Herrera</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Jung%20Chang%20and%20Jon%20Halliday</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Daniel%20Keyes</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Andrew%20Roberts</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Afshin%20Shahidi</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Gabriel%20Garc%C3%ADa%20M%C3%A1rquez</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Erich%20Maria%20Remarque</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Agatha%20Christie</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Leo%20Tolstoy</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Toni%20Morrison</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Truman%20Capote</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Evelyn%20Waugh</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Stephen%20Hawking</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=nonfiction</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Alexander%20Dumas</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Vincent%20Bugliosi%20&amp;%20Curt%20Gentry</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Ann%20Rule</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Robert%20Graysmith</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=John%20Berendt</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=John%20Douglas%20and%20Mark%20Olshaker</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Dominick%20Dunne%20and%20Pablo%20Fenjves</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Erik%20Larson</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=John%20Grisham</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Anita%20Diamant</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=fiction</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Alice%20Hoffman</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Bernard%20Cromwell</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Sigrid%20Undset</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Hilary%20Mantel</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Philippa%20Gregory</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Sena%20Jeter%20Naslund</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Charles%20Dickens</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Indu%20Sundaresan</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Daniel%20Kehlmann</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Elizabeth%20Kolbert</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Maggie%20Nelson</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Jenny%20Odell</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Michelle%20Alexander</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Daniel%20Kahneman</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Bill%20Bryson</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Sam%20Quinones</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Barbara%20Demick</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Katherine%20Boo</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cornerbooks-ms5.herokuapp.com/shop/?q=Robert%20MacFarlane</loc>
+  <lastmod>2022-04-21T14:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
