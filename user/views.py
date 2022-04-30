@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -11,6 +11,8 @@ def user_login(request):
     """
     Renders and authenticates the user login form
     """
+    if request.user.is_authenticated:
+        return redirect(reverse("shop"))
     if request.method == "POST":
         form = LoginForm(request.POST)
         if form.is_valid():
@@ -38,6 +40,8 @@ def register(request):
     """
     Renders the registration page to create new user accounts.
     """
+    if request.user.is_authenticated:
+        return redirect(reverse("shop"))
     if request.method == "POST":
         user_form = UserRegistrationForm(request.POST)
         if user_form.is_valid():
