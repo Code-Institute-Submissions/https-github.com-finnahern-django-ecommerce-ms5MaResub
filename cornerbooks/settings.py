@@ -25,18 +25,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
     'cornerbooks-ms5.herokuapp.com',
     'https://cornerbooks-ms5.herokuapp.com',
-    'https://8000-finnahern-djangoecommerc-fomto9g2f02.ws-eu38.gitpod.io',
+    'https://8000-finnahern-djangoecommer-821z1m0x621.ws-eu43.gitpod.io',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://cornerbooks-ms5.herokuapp.com',
-    'https://8000-finnahern-djangoecommerc-fomto9g2f02.ws-eu38.gitpod.io'
+    'https://8000-finnahern-djangoecommer-821z1m0x621.ws-eu43.gitpod.io'
 ]
 
 

@@ -11,3 +11,5 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('user/', include('user.urls')),
 ]
+
+handler404 = 'home.views.error_404'
