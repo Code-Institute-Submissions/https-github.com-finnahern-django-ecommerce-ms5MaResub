@@ -3,10 +3,18 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+from django.conf import settings
 
 from checkout.models import Order
 from . forms import LoginForm, UserRegistrationForm
 
+from mailchimp_marketing import Client
+from mailchimp_marketing.api_client import ApiClientError
+
+# Mailchimp Settings
+api_key = settings.MAILCHIMP_API_KEY
+server = settings.MAILCHIMP_DATA_CENTER
+list_id = settings.MAILCHIMP_EMAIL_LIST_ID
 
 def user_login(request):
     """
@@ -87,6 +95,31 @@ def order_history(request):
     return render(request, template, context)
 
 
+def subscribe(email):
+    """
+    Adds the email address submitted by the newsletter
+    form to a mailing list using the Mailchimp API.
+    Code used from https://www.pythonstacks.com/blog/post/integrating-mailchimp-django/
+    """
+
+    mailchimp = Client()
+    mailchimp.set_config({
+        "api_key": api_key,
+        "server": server,
+    })
+
+    member_info = {
+        "email_address": email,
+        "status": "subscribed",
+    }
+
+    try:
+        response = mailchimp.lists.add_list_member(list_id, member_info)
+        print("response: {}".format(response))
+    except ApiClientError as error:
+        print("An exception occurred: {}".format(error.text))
+
+
 def newsletter_signup(request):
     """
     Renders the newsletter sign up form
@@ -94,7 +127,7 @@ def newsletter_signup(request):
 
     if request.method == "POST":
         email = request.POST["email"]
-        print(email)
+        subscribe(email)
         messages.success(request, "Thank you for signing up to the newsletter")
 
     template = "user/newsletter.html"
