@@ -10,6 +10,8 @@ The issues with the original submission that needed to be addressed in this vers
 - There was no mockup Facebook page for the store.
 - The newsletter form was only a dummy, nothing was done with the email addreesses submitted.
 
+I tracked my progress implementing these changes using a [Github project board](https://github.com/finnahern/django-ecommerce-ms5/projects/2).
+
 ### Confirmation email
 
 After investigating how to send [automated emails](https://docs.djangoproject.com/en/4.0/topics/email/) [using Django](https://www.sitepoint.com/django-send-email/), I decided that given my limited time frame this was too complex to implement and that, since automated emails are not required per criteria 1.2, the fix was simply to remove the reference to the non-existent email on the order confirmation page. Adding this functionality would be something I'd like to include in any future revisions to the project.
