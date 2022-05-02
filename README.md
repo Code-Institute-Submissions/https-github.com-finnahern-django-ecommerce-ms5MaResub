@@ -2,6 +2,8 @@
 
 [Link to deployed site.](https://cornerbooks-ms5.herokuapp.com/)
 
+This is the original, unchanged Readme document for this project. The updated document featuring recent revisions is [here](https://github.com/finnahern/django-ecommerce-ms5/blob/main/READMErevision.md).
+
 A project using Django to create a commercial grade ecommerce website. The site uses a Postgres database to handle a number of bespoke data models to dynamically serve content and respond to user actions.
 
 I believe this project serves a strong base and many of its functions can be repurposed into future ecommerce applcations and other projects. Unfortunately there are a number of features I would have liked to include for a more complete user experience that were not feasible due to time constraints. These are detailed in [improvements](#Improvements) section below.
