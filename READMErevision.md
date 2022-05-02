@@ -36,7 +36,7 @@ A screenshot of the mocked up Facebook page for the site is included in the doc_
 
 ### Newsletter form
 
-In order to actually do something with the email addresses provided by the newsletter form I signed up for a Mailchimp account and used their API to store the subissions as a mailing list.
+In order to actually do something with the email addresses provided by the newsletter form I signed up for a Mailchimp account and used their API to store the submissions as a mailing list.
 
 This was achieved by storing the API key and mail list ID provided by Mailchimp as enviornment variables and implementing a subscribe function to views.py in the user app which is called when the form is submitted along with the email field as an argument. The function then submits the given email address to Mailchimp to add to the mailing list. 
 
