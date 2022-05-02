@@ -6,13 +6,13 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
+    <div class="container">
         <div class="row">
             <div class="col-lg-8 justify-content-center">
                 <h3>Newsletter</h3>
                 <p>Sign up for our newsletter</p>
                 <div class="col-6">
-                    <form action="#" method="POST" id="login-form">
+                    <form action="{% url 'newsletter' %}" method="POST" id="login-form">
                         {% csrf_token %}
                         <fieldset>
                             Enter your email address:
@@ -32,4 +32,15 @@
             </div>
         </div>
     </div>
+
+    <!-- Message if user signs up with email -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="my-5 alert alert-success">
+                <h5 class="m-0">
+                    {{ message }}
+                </h5>
+            </div>
+        {% endfor %}
+    {% endif %}
 {% endblock %}

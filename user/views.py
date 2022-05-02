@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -90,6 +91,11 @@ def newsletter_signup(request):
     """
     Renders the newsletter sign up form
     """
+
+    if request.method == "POST":
+        email = request.POST["email"]
+        print(email)
+        messages.success(request, "Thank you for signing up to the newsletter")
 
     template = "user/newsletter.html"
     context = {}
