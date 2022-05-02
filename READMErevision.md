@@ -32,7 +32,7 @@ In order to prevent users who were already logged in from accessing the login or
 
 A screenshot of the mocked up Facebook page for the site is included in the doc_resources directory
 
-<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/facebook.PNG" width="50%" height="50%"/>
+<img src="https://raw.githubusercontent.com/finnahern/django-ecommerce-ms5/main/doc_resources/screenshots/facebook.PNG" width="50%" height="50%"/>
 
 ### Newsletter form
 
